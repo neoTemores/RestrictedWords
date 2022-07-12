@@ -1,0 +1,22 @@
+body {
+    background-color: darkgray;
+    box-sizing: border-box;
+    font-family: fantasy, Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+#mainAppDiv {
+    background-color: lightblue;
+    width: 100%;
+    height: 100%;
+}
+
+#inputBoxContainer {
+    background-color: green;
+    width: fit-content;
+}
+
+#postsContainer {
+    background-color: dodgerblue;
+    width: fit-content;
+}
