@@ -57,7 +57,6 @@ function inputText() {
 function obtainTextAreaValue() {
     let postText = inputText()
     postText.length > 0 ? splitPostTextIntoArray(postText.toLowerCase()) : null
-
 }
 
 function splitPostTextIntoArray(text) {

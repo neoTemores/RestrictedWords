@@ -2,7 +2,7 @@ body {
     background-color: darkgray;
     box-sizing: border-box;
     font-family: fantasy, Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 #mainAppDiv {
@@ -24,6 +24,7 @@ body {
 #textArea {
     height: 25vh;
     width: 65vw;
+    font-size: 2rem;
 }
 
 #postBtn {}
