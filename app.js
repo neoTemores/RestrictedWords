@@ -7,7 +7,7 @@ const body = document.querySelector('body');
 const loadApp = () => {
     let mainAppDiv = createMainAppContainerDiv()
     let inputBoxContainer = createInputBoxContainer(mainAppDiv)
-    let postsContainer = createPostsContainer(mainAppDiv)
+    createPostsContainer(mainAppDiv)
     createTextArea(inputBoxContainer)
     createPostButton(inputBoxContainer)
 }
@@ -112,11 +112,20 @@ function replacePostRestrictedWords(array) {
 function createPostsContainer(mainAppDiv) {
     let postsContainer = createDiv();
     postsContainer.id = 'postsContainer';
-    postsContainer.textContent = 'THIS WILL BE THE POSTS CONTAINER';
     mainAppDiv.appendChild(postsContainer)
     return postsContainer
 }
 
 function displayPosts(arrayOfPosts) {
-    console.log(arrayOfPosts)
+    let postContainer = document.querySelector('#postsContainer')
+    postContainer.innerHTML = ''
+
+    arrayOfPosts.forEach(element => {
+        let pTag = document.createElement('p')
+        pTag.textContent = element
+
+        postContainer.appendChild(pTag)
+
+    });
+
 }

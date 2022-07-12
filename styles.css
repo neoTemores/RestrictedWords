@@ -6,15 +6,16 @@ body {
 }
 
 #mainAppDiv {
-    background-color: lightblue;
     width: 100%;
     height: 100%;
 }
 
 #inputBoxContainer {
-    background-color: green;
+    /* background-color: lightblue; */
     width: fit-content;
     padding: 1rem;
+    display: grid;
+    gap: .5rem;
 }
 
 #textArea {
@@ -29,6 +30,7 @@ body {
 }
 
 #postsContainer {
-    background-color: dodgerblue;
+    /* background-color: lightblue; */
+    /* padding: .5rem; */
     width: fit-content;
 }
